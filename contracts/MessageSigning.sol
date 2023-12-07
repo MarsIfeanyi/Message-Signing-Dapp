@@ -2,10 +2,9 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
- * @title Simple Smart that sets Name and number and gets the name and number
+ * @title Simple Smart that  sends Message, sets Name and number and gets the sent Message, the name and number
  * @author Marcellus Ifeanyi
- * @notice This implements functionalities to set and get name and number.
- * @dev A user will call this functions from the frontEnd UI to set and get the names and number
+ * @dev A user will call this functions from the frontEnd UI to send and Sign Messages.
  */
 
 contract MessageSigning {
@@ -65,3 +64,4 @@ function getMessage() public view returns(string memory){
 }
 
 }
+git
