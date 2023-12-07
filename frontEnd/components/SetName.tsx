@@ -4,7 +4,7 @@ import {
   usePrepareContractWrite,
   useWaitForTransaction,
 } from "wagmi";
-import { NameNumberABI, NameNumber_ADDRESS } from "../constants";
+import { MessagingSigningABI, MessageSigning_ADDRESS } from "../constants";
 
 type Props = {};
 
@@ -12,8 +12,8 @@ const SetName = (props: Props) => {
   const [name, setName] = useState<string>("");
 
   const { config: setNameConfig } = usePrepareContractWrite({
-    address: NameNumber_ADDRESS,
-    abi: NameNumberABI,
+    address: MessageSigning_ADDRESS,
+    abi: MessagingSigningABI,
     functionName: "setName",
     args: [name],
   });
