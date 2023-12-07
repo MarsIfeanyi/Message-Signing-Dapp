@@ -26,7 +26,9 @@ const GetMessage = (props: Props) => {
     <div>
       <p>Message: {String(getMessageData)} </p>
       {isGettingMessageError && (
-        <p>Error getting Message, Please Check if wallet is connected...</p>
+        <p className="text-sm font-normal">
+          Error getting Message, <br /> Please Check if wallet is connected...
+        </p>
       )}
       {isGettingMessage && <p>Getting Message....</p>}
     </div>
