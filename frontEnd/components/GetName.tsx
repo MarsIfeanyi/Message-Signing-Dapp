@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useContractRead } from "wagmi";
-import { NameNumberABI, NameNumber_ADDRESS } from "../constants";
+import { MessagingSigningABI, MessageSigning_ADDRESS } from "../constants";
 
 type Props = {};
 
@@ -10,8 +10,8 @@ const GetName = (props: Props) => {
     isError: isGettingNameError,
     isLoading: isGettingName,
   } = useContractRead({
-    address: NameNumber_ADDRESS,
-    abi: NameNumberABI,
+    address: MessageSigning_ADDRESS,
+    abi: MessagingSigningABI,
     functionName: "getName",
     watch: true,
     onSuccess(data) {
