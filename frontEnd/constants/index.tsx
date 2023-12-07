@@ -1,4 +1,4 @@
-import { NameNumber_ADDRESS } from "./nameNumberAddress";
-import NameNumberABI from "./nameNumberABI.json";
+import { MessageSigning_ADDRESS } from "./messageSigning";
+import MessagingSigningABI from "./messageSigningABI.json";
 
-export { NameNumber_ADDRESS, NameNumberABI };
+export { MessageSigning_ADDRESS, MessagingSigningABI };
