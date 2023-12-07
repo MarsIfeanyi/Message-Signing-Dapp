@@ -4,7 +4,7 @@ import {
   usePrepareContractWrite,
   useWaitForTransaction,
 } from "wagmi";
-import { NameNumberABI, NameNumber_ADDRESS } from "../constants";
+import { MessagingSigningABI, MessageSigning_ADDRESS } from "../constants";
 
 type Props = {};
 
@@ -12,8 +12,8 @@ const SendMessage = (props: Props) => {
   const [message, setMessage] = useState<string>("");
 
   const { config: sendMessageConfig } = usePrepareContractWrite({
-    address: NameNumber_ADDRESS,
-    abi: NameNumberABI,
+    address: MessageSigning_ADDRESS,
+    abi: MessagingSigningABI,
     functionName: "sendMessage",
     args: [message],
   });
