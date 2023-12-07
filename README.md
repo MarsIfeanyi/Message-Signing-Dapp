@@ -19,8 +19,6 @@ https://sepolia.etherscan.io/address/0x8a814de34f94b830d4009b9f6191a0e990a447f6
 
 ### Frontend Live URL
 
-I integrated the smart contract to the FrontEnd and deployed to vercel
-
 https://messagesigning-dapp.vercel.app/
 
 ## Getting Started
