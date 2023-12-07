@@ -25,7 +25,9 @@ const GetNumber = (props: Props) => {
   return (
     <div>
       <p>Number: {Number(getNumberData)} </p>
-      {isGettingNumberError && <p>Error getting Number</p>}
+      {isGettingNumberError && (
+        <p>Error getting Number, Please Check if wallet is connected</p>
+      )}
       {isGettingNumber && <p>Getting Number....</p>}
     </div>
   );

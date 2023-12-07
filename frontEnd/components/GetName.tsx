@@ -25,7 +25,9 @@ const GetName = (props: Props) => {
   return (
     <div>
       <p>Name: {String(getNameData)} </p>
-      {isGettingNameError && <p>Error getting Name</p>}
+      {isGettingNameError && (
+        <p>Error getting Name, Please Check if wallet is connected</p>
+      )}
       {isGettingName && <p>Getting Name....</p>}
     </div>
   );
