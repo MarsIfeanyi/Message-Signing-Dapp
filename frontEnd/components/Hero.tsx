@@ -11,9 +11,14 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <>
-      <h2 className="flex items-center justify-center text-3xl font-medium mt-6">
-        Simple Wallet Connection and Message Signing Dapp
+      <h2 className="flex items-center justify-center text-4xl font-bold mt-6">
+        Simple Dapp
       </h2>
+
+      <p className="flex items-center justify-center text-3xl font-medium mt-6 mx-10">
+        This Dapp Allows You to Send Message and get Message <br />
+        Set Name and get Name, Set Number and get Number.
+      </p>
 
       <div className="flex flex-row mt-20 items-center justify-center gap-20 font-bold">
         <div className="flex-col space-y-10">
