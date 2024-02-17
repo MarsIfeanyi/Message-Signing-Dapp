@@ -3,8 +3,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 /**
  * @title Simple Smart that  sends Message, sets Name and number and gets the sent Message, the name and number
- * @author Marcellus Ifeanyi
- * @dev A user will call this functions from the frontEnd UI to send and Sign Messages.
+ * @dev A user will call this functions from the frontEnd UI to send and Sign Messages and get the result displayed on the frontend UI
  */
 
 contract MessageSigning {
@@ -15,9 +14,9 @@ contract MessageSigning {
 
     constructor() {
         owner = msg.sender;
-        name = "Mars Ifeanyi";
-        message= 'Web3Bridge-Cartesi Assessment'
-        number = 100;
+        name = "ugomars";
+        message= 'MetaCrafter-Avax'
+        number = 500;
     }
 
     /**
@@ -63,5 +62,3 @@ function getMessage() public view returns(string memory){
     return message;
 }
 
-}
-git
