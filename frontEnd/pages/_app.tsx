@@ -12,6 +12,8 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import {
+  avalancheFuji,
+  avalanche,
   arbitrum,
   goerli,
   mainnet,
@@ -28,6 +30,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 const { chains, publicClient } = configureChains(
   [
+    avalancheFuji,
+    avalanche,
     mainnet,
     polygon,
     optimism,
